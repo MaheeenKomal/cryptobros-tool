@@ -27,7 +27,7 @@
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                    <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                         <h2 class="tabs__text">Rewards</h2>
                     </a>
                 </li>
@@ -42,19 +42,19 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" id="launchpad-tab" data-toggle="tab" href="#launchpad" role="tab" aria-controls="launchpad" aria-selected="false">
+                    <a class="nav-link " id="launchpad-tab" data-toggle="tab" href="#launchpad" role="tab" aria-controls="launchpad" aria-selected="false">
                         <h2 class="tabs__text">Launchpad</h2>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="tools-tab" data-toggle="tab" href="#tools" role="tab" aria-controls="tools" aria-selected="false">
+                    <a class="nav-link " id="tools-tab" data-toggle="tab" href="#tools" role="tab" aria-controls="tools" aria-selected="false">
                         <h2 class="tabs__text">Tools</h2>
                     </a>
                 </li>
             </ul>
 
             <div class="tab-content" id="myTabContent">
-                <div class="pane tabs--pane1 tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="pane tabs--pane1 tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
 
                     <div class="info info--tabs">
                         <div class="withdraw__bind">
@@ -62,7 +62,7 @@
                             <p class="commontext commontext--info ">Minting Rewards</p>
                         </div>
                         <h3 class="withdraw__h3">7 SOL</h3>
-                        <button class="rewardbtn rewardbtn rewardbtn--design">WITHDRAW</button>
+                        <a href=""> <button class="rewardbtn rewardbtn rewardbtn--design">WITHDRAW</button></a>
                     </div>
                     <div class="info info--tabs1">
                         <div class="withdraw__bind">
@@ -70,7 +70,7 @@
                             <p class="commontext commontext--info ">Holding Rewards</p>
                         </div>
                         <h3 class="withdraw__h3">0.1 SOL</h3>
-                        <button class="rewardbtn rewardbtn--design">WITHDRAW</button>
+                        <a href=""> <button class="rewardbtn rewardbtn--design">WITHDRAW</button></a>
                     </div>
                     <div class="info info--tabs2">
                         <div class="withdraw__bind">
@@ -78,6 +78,7 @@
                             <p class="commontext commontext--info ">Community Wallet Holdings</p>
                         </div>
                         <h3 class="withdraw__h3">30 SOL</h3>
+                        <div class="withdarw__empty"></div>
 
                     </div>
 
@@ -110,7 +111,7 @@
                             <span class="voting__span"></span>
                           </label>
                         </div>
-                        <button class="rewardbtn rewardbtn--design1">Submit</button>
+                        <a class="anchorbtn anchorbtn--button" href=""><button class="rewardbtn rewardbtn--design1">Submit</button></a>
                     </div>
                 </div>
 
@@ -130,7 +131,7 @@
                                     <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
                                 </div>
                             </div>
-                            <button class="rewardbtn rewardbtn--design2">whitelist</button>
+                            <a href=""> <button class="rewardbtn rewardbtn--design2">whitelist</button></a>
                         </div>
 
                         <div class="voting voting--info1">
@@ -140,65 +141,85 @@
                                     <div class="outerbox__bind">
                                         <h5 class="outerbox__h5">Space Explorers</h5>
 
-                                        <p class="outerbox__text">Next Month</p>
+                                        <p class="outerbox__text next next--text">Next Month</p>
 
                                     </div>
                                     <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
                                 </div>
                             </div>
-                            <button class="rewardbtn rewardbtn--design2">whitelist</button>
+                            <a href=""> <button class="rewardbtn rewardbtn--design2">whitelist</button></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="pane tabs--pane4 tab-pane fade  show active" id="launchpad" role="tabpanel" aria-labelledby="launchpad-tab">
+                <div class="pane tabs--pane4 tab-pane fade  " id="launchpad" role="tabpanel" aria-labelledby="launchpad-tab">
                     <p class="commontext commontext--info3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
                     <div class="launchpad launchpad--info">
 
                         <div class="outerbox outerbox--box2">
-                            <img class="outerbox__img" src="images/bros.png" alt="missing">
+                            <img class="outerbox__img" src="images/bros-lg.png" alt="missing">
                             <div class="outerbox__content">
 
                                 <h5 class="outerbox__h5">Crypto Bros</h5>
-                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
+                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. </p>
                                 <p class="outerbox__text">In 7 Days</p>
                             </div>
                         </div>
 
                         <div class="outerbox outerbox--box2">
-                            <img class="outerbox__img" src="images/bros.png" alt="missing">
+                            <img class="outerbox__img space space--img" src="images/space-lg.png" alt="missing">
                             <div class="outerbox__content">
-                                <div class="outerbox__bind">
-                                    <h5 class="outerbox__h5">Crypto Bros</h5>
 
-                                    <p class="outerbox__text">In 7 Days</p>
+                                <h5 class="outerbox__h5">To the Moon</h5>
+                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. </p>
+                                <p class="outerbox__text next next--text">Next Month</p>
+                            </div>
+                        </div>
+                        <div class="outerbox outerbox--box2">
+                            <img class="outerbox__img" src="images/bros-lg.png" alt="missing">
+                            <div class="outerbox__content">
 
-                                </div>
-                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
+                                <h5 class="outerbox__h5">Crypto Bros</h5>
+                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. </p>
+                                <p class="outerbox__text">In 7 Days</p>
+                            </div>
+                        </div>
+                        <div class="outerbox outerbox--box2">
+                            <img class="outerbox__img space space--img" src="images/space-lg.png" alt="missing">
+                            <div class="outerbox__content">
+
+                                <h5 class="outerbox__h5">To the Moon</h5>
+                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. </p>
+                                <p class="outerbox__text next next--text">Next Month</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-
-
-
-
-
                 <div class="pane tabs--pane5 tab-pane fade " id="tools" role="tabpanel" aria-labelledby="tools-tab">
+                    <p class="commontext commontext--info3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. Imperdiet sed ut enim platea quam lacus elementum at.</p>
+
+                    <div class="tools tools--info">
+
+                        <div class="outerbox outerbox--box2">
+                            <div class="tools__image">
+                                <img class="tools__img" src="images/Bot.png" alt="missing">
+                            </div>
+
+                            <div class="outerbox__content">
+
+                                <h5 class="outerbox__h5">CryptoBros Bot Tool</h5>
+                                <p class="commontext commontext--info4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra et mauris risus in. Et, urna aenean dolor dolor, semper vitae fermentum. </p>
+                                <a href=""> <button class="toolbtn toolbtn--btn">
+                                    Download
+                                </button> </a>
+                            </div>
+                        </div>
 
 
-
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
 
             </div>
 

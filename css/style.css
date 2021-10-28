@@ -56,6 +56,10 @@ h6 {
     margin-bottom: initial;
 }
 
+label {
+    margin-bottom: initial;
+}
+
 
 /* ====================================== connectReward CSS ===================================================== */
 
@@ -127,6 +131,7 @@ svg {
     top: 887px;
     background: #171717;
     border: 2px solid #232323;
+    text-transform: uppercase;
 }
 
 
@@ -210,7 +215,13 @@ svg {
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
-    padding: 120px 0px;
+    padding: 120px 100px;
+}
+
+.tabs .nav {
+    flex-warp: initial;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
 }
 
 .tabs__content {
@@ -232,11 +243,6 @@ svg {
     max-width: 240px;
     text-align: center;
     border-radius: 16px;
-}
-
-.nav-link {
-    /* padding: 22px 15px; */
-    /* border: initial; */
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -275,10 +281,14 @@ svg {
 
 /* rewards */
 
+.anchorbtn {
+    margin: auto;
+}
+
 .tabs__content .info {
     display: flex;
     align-items: center;
-    padding: 32px 80px;
+    padding: 32px 40px;
     justify-content: space-between;
 }
 
@@ -286,8 +296,6 @@ svg {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    /* identical to box height, or 160% */
-    /* White-Medium */
     color: rgba(255, 255, 255, 0.88);
     text-transform: capitalize;
 }
@@ -299,6 +307,11 @@ svg {
     width: 100%;
     max-width: 237px;
     text-align: center;
+}
+
+.withdarw__empty {
+    width: 100%;
+    max-width: 232px;
 }
 
 .withdraw__h3 {
@@ -324,16 +337,7 @@ svg {
 }
 
 .tab-content {
-    padding: 41px 0px 0px;
-}
-
-.info--tabs2 {
-    width: 100%;
-    max-width: 709px;
-}
-
-.tabs__content .info--tabs2 {
-    max-width: 762px;
+    padding: 41px 42px 0px;
 }
 
 .withdraw__img {
@@ -375,7 +379,7 @@ svg {
 
 .outerbox {
     width: 100%;
-    padding: 32px 28px;
+    padding: 28px 28px;
     max-width: 340px;
     height: 96px;
     background: #232323;
@@ -402,7 +406,6 @@ svg {
     display: block;
     position: relative;
     padding-left: 47px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -452,9 +455,6 @@ svg {
     display: block;
 }
 
-
-/* Style the indicator (dot/circle) */
-
 .voting__bind .voting__span:after {
     top: 8px;
     left: 0;
@@ -488,7 +488,7 @@ svg {
 .commontext--info4 {
     width: 100%;
     text-transform: initial;
-    padding: 19px 0px 0px;
+    padding: 9px 0px 21px;
     font-size: 16px;
     line-height: 24px;
 }
@@ -505,16 +505,14 @@ svg {
 .outerbox__text {
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
     text-align: center;
-    /* White-Medium */
     color: rgba(255, 255, 255, 0.88);
-    width: 100%;
     background: #171717;
     border-radius: 12px;
-    max-width: 105px;
     padding: 6px 16px;
     position: relative;
+    width: 100%;
+    max-width: 105px;
 }
 
 .outerbox__bind {
@@ -529,6 +527,7 @@ svg {
     max-width: 168px;
     height: 175px;
     object-fit: contain;
+    margin-top: 6px;
 }
 
 .voting--info1 {
@@ -540,6 +539,7 @@ svg {
 .outerbox__content {
     width: 100%;
     margin-left: 15px;
+    max-width: 430px;
 }
 
 .outerbox__h5 {
@@ -572,10 +572,449 @@ svg {
 }
 
 
+/* ====================================== launchpadTabs CSS ===================================================== */
+
+.launchpad--info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1106px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.launchpad--info .outerbox--box2 {
+    max-width: 536px;
+    height: 232px;
+    padding: 14px 8px 0px 0px;
+}
+
+.launchpad--info .outerbox__text {
+    margin-top: 23px;
+}
+
+.launchpad--info .outerbox__img {
+    height: 194px;
+    max-width: 184px;
+    object-fit: contain;
+    margin-top: 22px;
+}
+
+.launchpad--info .commontext--info4 {
+    padding: 10px 0px 0px;
+}
+
+.launchpad--info .space {
+    margin-top: 45px;
+}
+
+.next {
+    width: 100%;
+    max-width: 128px !important;
+}
+
+
+/* ====================================== launchpadTabs CSS ===================================================== */
+
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools .outerbox--box2 {
+    max-width: 536px;
+    padding: 16px;
+    height: 264px;
+}
+
+.tools__image {
+    height: 120px;
+    width: 120px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools__img {
+    height: 72px;
+    width: 72px;
+    object-fit: contain;
+}
+
+.tools .outerbox__content {
+    max-width: 368px;
+}
+
+.toolbtn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    width: 100%;
+    max-width: 237px;
+    padding: 18px 15px;
+    background: #232323;
+    position: relative;
+}
+
+.toolbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    background: linear-gradient( 360deg, #f3b53d, #ed6c37);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    background: -webkit-linear-gradient( 360deg, #f3b53d, #ed6c37);
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
+}
+
+
 /* ====================================== Media-Queries ===================================================== */
 
-@media(max-width: 992px) {
+@media(max-width: 1400px) {
+    /* tabs */
+    .tabs__content {
+        height: initial;
+    }
+    .tab-content {
+        padding: 41px 42px 165px;
+    }
+    /* rewardtabs */
+    .tabs__content .info {
+        padding: 32px 60px;
+    }
+    .tabs__content .info--tabs2 {
+        max-width: initial;
+    }
+    /* launchpad css */
+    .launchpad--info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .launchpad--info .outerbox--box2 {
+        height: initial;
+    }
+}
+
+@media(max-width: 1200px) {
+    /* rewardtabs */
+    .tabs__content .info {
+        padding: 32px 0px;
+    }
+    .rewardbtn {
+        padding: 18px 38px;
+    }
+    .withdraw__h3 {
+        font-size: 40px;
+    }
+    .withdraw__img {
+        height: 70px;
+        width: 70px;
+    }
+    .commontext {
+        font-size: 18px;
+    }
+    .withdraw__bind {
+        max-width: 190px;
+    }
+    .withdarw__empty {
+        max-width: 180px;
+    }
+    /* voting css */
+    .rewardbtn--design1 {
+        padding: 18px 64px;
+    }
+    .outerbox {
+        height: initial;
+        padding: 24px 28px;
+    }
+    .h4custom {
+        font-size: 30px;
+    }
+    /* whitelist css */
+    .voting--info1 {
+        flex-direction: column;
+        padding: 30px 0px 103px;
+    }
+    .whitelist {
+        padding: 0px 0px 100px;
+    }
+    /* launchpad */
+    .launchpad--info .outerbox--box2 {
+        height: initial;
+        padding: 14px 8px;
+    }
+}
+
+@media(max-width: 998px) {
+    /* connectWallet */
     .reward__headline {
         font-size: 55px;
+    }
+    .reward__text {
+        font-size: 19px;
+        padding: 0px 15px;
+    }
+    .reward__button {
+        max-width: 265px;
+        padding: 18px 35px;
+    }
+    /* reward css */
+    .tabs__content .info {
+        flex-direction: column;
+    }
+    .withdraw__h3 {
+        padding: 45px 0px;
+    }
+    .rewardbtn {
+        padding: 18px 64px;
+    }
+    .tabs__content .info {
+        padding: 43px 50px;
+    }
+    .tabs--pane1 {
+        padding: 0px 0px 25px;
+    }
+    .nav-link .tabs__text {
+        font-size: 21px;
+    }
+    .h4custom {
+        font-size: 27px;
+    }
+    .voting {
+        padding: 38px 0px 144px;
+        flex-direction: column;
+    }
+    .voting__bind {
+        font-size: 19px;
+    }
+    .voting__span {
+        height: 28px;
+        width: 28px;
+    }
+    .voting__bind .voting__span:after {
+        top: 7px;
+        width: 14px;
+        height: 14px;
+    }
+    .tab-content {
+        padding: 41px 50px 0px;
+    }
+    .commontext {
+        font-size: 17px;
+    }
+    /* whitelist */
+    .voting--info1 {
+        padding: 30px 0px 103px;
+    }
+    .outerbox__img {
+        max-width: 150px;
+    }
+    .outerbox--box2 {
+        margin-bottom: 90px;
+    }
+    .outerbox__text {
+        font-size: 15px;
+        max-width: 100px;
+    }
+    .outerbox__h5 {
+        font-size: 22px;
+    }
+    .outerbox__text {
+        padding: 5px 10px;
+    }
+    .outerbox--box2 {
+        padding: 24px 18px;
+    }
+    /* tools */
+    .tools {
+        padding: 0px 0px 98px;
+    }
+    .tools__img {
+        height: 60px;
+        width: 60px;
+    }
+    .toolbtn {
+        max-width: 217px;
+        padding: 15px 15px;
+    }
+    .tools__image {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(max-width: 768px) {
+    /* tabs */
+    .nav-link .tabs__text {
+        font-size: 20px;
+    }
+    /* connectWallet */
+    .reward__text {
+        top: 587px;
+    }
+    .reward__button {
+        top: 849px;
+    }
+    /* reawrd css */
+    .tabs .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-item {
+        width: 100%;
+        max-width: initial;
+    }
+    .rewardbtn {
+        padding: 16px 55px;
+    }
+    .tabs {
+        padding: 120px 60px;
+    }
+    /* voting css */
+    .outerbox {
+        padding: 20px 28px;
+    }
+    .tab-content {
+        padding: 41px 36px 0px;
+    }
+    .commontext--info4 {
+        font-size: 15px;
+    }
+    .outerbox__img {}
+    .outerbox--box2 {}
+    .outerbox__h5 {
+        font-size: 20px;
+    }
+    .outerbox__content {
+        margin-left: 4px;
+        max-width: initial;
+    }
+    .next {
+        padding: 5px 4px;
+    }
+    .outerbox--box2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 28px;
+    }
+    /* launchpad css */
+    .launchpad--info .outerbox__text {
+        margin: 24px auto;
+    }
+    .launchpad--info .outerbox__content {
+        padding: 24px 0px 0px;
+        text-align: center;
+    }
+    /* tools */
+    .tools .outerbox--box2 {
+        height: initial;
+    }
+    .tools .outerbox__content {
+        max-width: initial;
+        padding: 26px 0px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+    /* connectWallet */
+    .reward__text {
+        top: 494px;
+        font-size: 17px;
+    }
+    .reward__headline {
+        font-size: 32px;
+        top: 173px;
+    }
+    .reward__button {
+        font-size: 15px;
+        padding: 18px 30px;
+        max-width: 220px;
+        top: 820px;
+    }
+    /* reward css */
+    .tabs {
+        padding: 120px 25px;
+    }
+    .withdraw__h3 {
+        font-size: 38px;
+    }
+    .rewardbtn {
+        padding: 15px 50px;
+    }
+    .tabs__content .info {
+        padding: 43px 0px;
+    }
+    /* votingcss */
+    .commontext {
+        font-size: 15px;
+    }
+    .h4custom {
+        font-size: 25px;
+    }
+    .tab-content {
+        padding: 41px 18px 0px;
+    }
+    .voting__bind {
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 32px;
+    }
+    .voting__span {
+        height: 23px;
+        width: 23px;
+    }
+    .outerbox {
+        padding: 20px 8px;
+    }
+    .voting__bind .voting__span:after {
+        top: 5px;
+        width: 13px;
+        height: 13px;
+    }
+    .commontext--info1 {
+        padding: 8px 0px 51px;
+    }
+    /* whitelist */
+    .voting--info1 {
+        padding: 30px 0px 74px;
+    }
+    .outerbox--box2 {
+        padding: 4px 15px;
+    }
+    .commontext--info4 {
+        text-align: center;
+    }
+    .outerbox__bind {
+        flex-direction: column;
+    }
+    .outerbox__text {
+        margin: 10px 0px;
+    }
+    .whitelist {
+        padding: 0px 0px 40px;
+    }
+    .outerbox__h5 {
+        padding: 10px 0px 0px;
+    }
+    /* launchpadcss */
+    .launchpad--info .outerbox__img {
+        height: 160px;
+        max-width: 160px;
+    }
+    .toolbtn {
+        max-width: 180px;
+        padding: 12px 15px;
     }
 }
