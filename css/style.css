@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ====================================== Common CSS ===================================================== */
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+a:hover {
+    /* color: #1a6ebf; */
+    text-decoration: initial;
+}
+
+p {
+    margin-bottom: initial;
+}
+
+button:focus {
+    outline: initial;
+    cursor: pointer;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: initial;
+    box-shadow: initial;
+}
+
+ :focus-visible {
+    outline: initial;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: initial;
+}
+
+
+/* ====================================== connectReward CSS ===================================================== */
+
+#cryptoReward {
+    overflow: hidden;
+}
+
+.reward__content {
+    height: 1080px;
+    width: 100%;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.reward__headline {
+    position: absolute;
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    max-width: 669px;
+    top: 190px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 72px;
+    background: linear-gradient( to top, #f3b53d, #ed6c37);
+    background: -webkit-linear-gradient( top, #f3b53d, #ed6c37);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.reward__text {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 735px;
+    margin: auto;
+    max-width: 804px;
+    color: #171717;
+    line-height: 32px;
+}
+
+.reward__button {
+    position: absolute;
+    font-family: Montserrat;
+    color: #FCFCFC;
+    font-style: normal;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 290px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 18px 64px;
+    top: 887px;
+    background: #171717;
+    border: 2px solid #232323;
+}
+
+
+/* ====================== Svg Animations ============================= */
+
+.light {
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translate(-900px, -700px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.stars {
+    /* transform: translate(15.832px); */
+    transform-origin: center;
+    animation: spin1 12s linear infinite;
+    transform-box: fill-box;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#Vector_67 {
+    animation: move1 1s linear infinite;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(10px, -20px);
+    }
+    100% {
+        transform: initial;
+    }
+}
+
+#Vector_68 {
+    animation: move2 1.5s linear infinite;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(10px, -20px);
+    }
+    100% {
+        transform: initial;
+    }
+}
+
+#Vector_69 {
+    animation: move3 2s linear infinite;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(10px, -20px);
+    }
+    100% {
+        transform: initial;
+    }
+}
+
+
+/* ====================================== rewardTabs CSS ===================================================== */
+
+.tabs {
+    overflow: hidden;
+    background-image: url(../images/Connect\ Wallet.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 120px 0px;
+}
+
+.tabs__content {
+    max-width: 1200px;
+    height: 840px;
+    background: #171717;
+    box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.02), 6px 6px 12px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    width: 100%;
+    margin: auto;
+}
+
+.nav-tabs {
+    border-bottom: initial;
+}
+
+.nav-item {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.nav-link {
+    /* padding: 22px 15px; */
+    /* border: initial; */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: #232323;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.16);
+    border-color: initial !important;
+    border: initial;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #171717;
+}
+
+.nav-tabs .nav-link {
+    border: initial;
+    padding: 26px 15px;
+    border-radius: 16px;
+}
+
+.nav-link.active .tabs__text {
+    background: linear-gradient( to top, #f3b53d, #ed6c37);
+    background: -webkit-linear-gradient( top, #f3b53d, #ed6c37);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nav-link .tabs__text {
+    font-family: Balsamiq Sans;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* rewards */
+
+.tabs__content .info {
+    display: flex;
+    align-items: center;
+    padding: 32px 80px;
+    justify-content: space-between;
+}
+
+.commontext {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    /* White-Medium */
+    color: rgba(255, 255, 255, 0.88);
+    text-transform: capitalize;
+}
+
+.withdraw__bind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 237px;
+    text-align: center;
+}
+
+.withdraw__h3 {
+    font-family: Balsamiq Sans;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 0.88);
+    text-transform: uppercase;
+}
+
+.rewardbtn {
+    padding: 18px 64px;
+    max-width: 232px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #171717;
+    background: linear-gradient( 0deg, #f3b53d, #ed6c37);
+    background: -webkit-linear-gradient( 0deg, #f3b53d, #ed6c37);
+}
+
+.tab-content {
+    padding: 41px 0px 0px;
+}
+
+.info--tabs2 {
+    width: 100%;
+    max-width: 709px;
+}
+
+.tabs__content .info--tabs2 {
+    max-width: 762px;
+}
+
+.withdraw__img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+
+/* ====================================== votingTabs CSS ===================================================== */
+
+.tabs--pane2 .rewardbtn rewardbtn--design {
+    max-width: 196px;
+    margin: auto;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.commontext--info1 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    max-width: 1040px;
+    text-transform: initial;
+    padding: 8px 0px 63px;
+}
+
+.h4custom {
+    width: 100%;
+    max-width: 744px;
+    font-family: Balsamiq Sans;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.88);
+    margin: auto;
+}
+
+.outerbox {
+    width: 100%;
+    padding: 32px 28px;
+    max-width: 340px;
+    height: 96px;
+    background: #232323;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    margin-bottom: 48px;
+}
+
+.voting {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 38px 0px 0px;
+}
+
+
+/* custom radio */
+
+.voting__bind {
+    display: block;
+    position: relative;
+    padding-left: 47px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.voting__bind input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.voting__span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-color: #DBB97F;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.voting__bind:hover input~.voting__span {
+    background-color: #dbb97f94;
+    transition: 1s;
+}
+
+.voting__bind input:checked~.voting__span {
+    background: linear-gradient( 180deg, #f3b53d, #ed6c37);
+    background: -webkit-linear-gradient( 180deg, #f3b53d, #ed6c37);
+}
+
+.voting__span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.voting__bind input:checked~.voting__span:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.voting__bind .voting__span:after {
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 0;
+    background: white;
+    margin: auto;
+}
+
+
+/* ====================================== whitelistTabs CSS ===================================================== */
+
+.rewardbtn--design1 {
+    max-width: 196px;
+    margin: auto;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.commontext--info3 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    max-width: 1040px;
+    text-transform: initial;
+    padding: 8px 0px 63px;
+}
+
+.commontext--info4 {
+    width: 100%;
+    text-transform: initial;
+    padding: 19px 0px 0px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.outerbox--box2 {
+    height: initial;
+    display: flex;
+    max-width: 646px;
+    padding: 23px 31px 0px 0px;
+    height: 196px;
+    overflow: hidden;
+}
+
+.outerbox__text {
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    /* White-Medium */
+    color: rgba(255, 255, 255, 0.88);
+    width: 100%;
+    background: #171717;
+    border-radius: 12px;
+    max-width: 105px;
+    padding: 6px 16px;
+    position: relative;
+}
+
+.outerbox__bind {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.outerbox__img {
+    width: 100%;
+    max-width: 168px;
+    height: 175px;
+    object-fit: contain;
+}
+
+.voting--info1 {
+    flex-wrap: initial;
+    max-width: 1040px;
+    padding: 0px;
+}
+
+.outerbox__content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.outerbox__h5 {
+    font-family: Balsamiq Sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.outerbox__text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    background: linear-gradient( 180deg, #f3b53d, #ed6c37);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    background: -webkit-linear-gradient( 180deg, #f3b53d, #ed6c37);
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
+    border-radius: 12px;
+}
+
+.rewardbtn--design2 {
+    max-width: 223px;
+}
+
+
+/* ====================================== Media-Queries ===================================================== */
+
+@media(max-width: 992px) {
+    .reward__headline {
+        font-size: 55px;
+    }
+}
